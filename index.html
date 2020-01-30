@@ -1002,6 +1002,28 @@
     <script>
         new WOW().init();
     </script>
+    
+    <script>
+    $(".dropdown.mega-menu .nav-link").on("click", function() {
+        if($(this).siblings(".dropdown-menu").hasClass("show")) {
+            $(this).siblings(".dropdown-menu").removeClass("show");
+             
+        } else if($(".dropdown-menu").hasClass("show")) {
+                        $(this).siblings(".dropdown-menu").removeClass("show");
+        }
+        
+        
+        else {
+                  $(this).siblings(".dropdown-menu").addClass("show");
+
+        }
+       $(window).on("click", function() {
+            $(".dropdown.mega-menu .dropdown-menu").removeClass("show");
+            $('.navbar-collapse').collapse('hide');
+        });
+    });
+    
+    </script>
 </body>
 
 </html>

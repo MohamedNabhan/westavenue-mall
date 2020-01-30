@@ -37,6 +37,12 @@
     margin: auto;
         line-height: 1.49em;
     }
+    .dropdown-menu.show {
+    height: 300px;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+   
         /******/
 
     .navtop-item {
@@ -124,7 +130,7 @@
 
 
     .navbar-collapse {
-        background-color: rgba(0, 0, 0, 0.8);
+        background-color: #F3952C;
         text-align: center;
     }
 
