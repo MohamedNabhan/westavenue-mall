@@ -7,7 +7,7 @@ $(document).ready(function () {
 
     /* Start Change Navbar when Scrolling */
 
-    var navbar = $('nav'),
+    var navbar = $('.navbar'),
         topNavbar = $('.nav-top'),
         scrollButton = $("#scroll-top");
     $(window).on('scroll', function () {
@@ -17,18 +17,15 @@ $(document).ready(function () {
             navbar.addClass('navbar-scroll');
         }
     });
-    if ($(window).scrollTop() <= topNavbar.height()) {
+   
+ if ($(window).scrollTop() <= topNavbar.height()) {
             navbar.removeClass('navbar-scroll');
         } else {
             navbar.addClass('navbar-scroll');
         }
-    if ($(window).scrollTop() >= navbar.height()) {
-        navbar.addClass('navbar-scroll');
-    }
-
     /*--- Hide Navbar On click ----*/
 
-
+/*
     $('.navbar-nav>li>a').on('click', function () {
         $('.navbar-collapse').collapse('hide');
     });
@@ -36,7 +33,7 @@ $(document).ready(function () {
         $('.navbar-collapse').collapse('hide');
     });
 
-
+*/
     // Add scrollspy to <body>
     $('body').scrollspy({
         target: ".navbar",
@@ -77,6 +74,68 @@ $(document).ready(function () {
             scrollTop: 0
         }, 800);
     });
+    $('.inner-slider').owlCarousel({
+        items: 1,
+        autoplay: 500,
+        autoplayHoverPause: true,
+        loop: true,
+        margin: 20,
+        dots: true,
+        nav: false,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            1000: {
+                items: 1
+            }
+        }
+    });
+    $('.menu').owlCarousel({
+        items: 2,
+        autoplay: false,
+        autoplayHoverPause: true,
+        loop: true,
+        margin: 0,
+        padding:0,
+        dots: true,
+        nav: false,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 2
+            },
+            1000: {
+                items: 2
+            }
+        }
+    }); 
+    $('.owl-similar').owlCarousel({
+        items: 6,
+        autoplay: 2500,
+        autoplayHoverPause: true,
+        loop: true,
+        margin: 0,
+        padding:0,
+        dots: true,
+        nav: false,
+        responsive: {
+            0: {
+                items: 2
+            },
+            600: {
+                items: 3
+            },
+            1000: {
+                items: 6
+            }
+        }
+    });
 
     $('.shop-slider, #events-slider').owlCarousel({
         items: 4,
@@ -101,7 +160,7 @@ $(document).ready(function () {
     
     $('.owl-carousel').owlCarousel({
         items: 3,
-        autoplay: 3500,
+        autoplay: 2500,
         autoplayHoverPause: true,
         loop: true,
         margin: 20,

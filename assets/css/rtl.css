@@ -42,6 +42,11 @@ body {
     margin-left: initial!important;
     margin-right: auto!important;
 }
+
+.mr-auto, .mx-auto {
+    margin-right: initial!important;
+    margin-left: auto!important;
+}
 h1,h2,h3,h4,h5,h6,a,p,li {
     font-family: 'Changa', 'segoe ui light' !important;
     direction: rtl;
@@ -154,4 +159,42 @@ footer {
 
 .news-item button {
 float: left;
+}
+.float-right {
+    float: left !important;
+}
+
+.float-left {
+    float: right !important;
+}
+.text-left {
+    text-align: right !important;
+}
+
+.text-right{
+    text-align: left !important;
+}
+.inner-categories ul li {
+    text-align: right;
+}
+
+.inneritemsbox {
+    text-align: right;
+}
+
+.multimall-item-contain > div {
+    border-right: 0;
+    border-left: .5px solid #dbdbdb
+}
+.product-item { 
+text-align: right;
+}
+.product-item .product-image {
+    padding-left: 0;
+}
+.product-item .product-image img, .product-item .product-image a {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
 }
