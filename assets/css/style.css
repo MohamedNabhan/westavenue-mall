@@ -803,7 +803,7 @@ li a.whatsapp:focus {
         max-height: 300px !important;
         width: 100% !important;
     }
-
+}
     /*================ 4)Slider ================*/
 
     #nabcarousel .carousel-inner .carousel-item img {
@@ -1011,7 +1011,7 @@ li a.whatsapp:focus {
         color: #fff;
         letter-spacing: 3px;
         padding-top: 15px;
-        height: 70px;
+        min-height: 70px;
         margin-bottom: 0;
     }
 

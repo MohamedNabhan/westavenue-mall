@@ -205,6 +205,24 @@ $(document).ready(function () {
             cols: 1
         }]
     });
+     $(".dropdown.mega-menu .nav-link").on("click", function() {
+        if($(this).siblings(".dropdown-menu").hasClass("show")) {
+            $(this).siblings(".dropdown-menu").removeClass("show");
+             
+        } else if($(".dropdown-menu").hasClass("show")) {
+                        $(this).siblings(".dropdown-menu").removeClass("show");
+        }
+        
+        
+        else {
+                  $(this).siblings(".dropdown-menu").addClass("show");
+
+        }
+       $(window).on("click", function() {
+            $(".dropdown.mega-menu .dropdown-menu").removeClass("show");
+            $('.navbar-collapse').collapse('hide');
+        });
+    });
 
     /*--- Form Disaple/Enable Submit Button ----*/
     $('[name="my_checkbox"]').on("change", function () {
