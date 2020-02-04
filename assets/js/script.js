@@ -180,7 +180,7 @@ $(document).ready(function () {
     });
     
     //Project Filter
-    $("#our-work-gallary").cubeportfolio({
+    $(".our-work-gallary").cubeportfolio({
         layoutMode: 'grid',
         filters: '#project-filter',
         defaultFilter: '*',
@@ -190,16 +190,16 @@ $(document).ready(function () {
         gridAdjustment: "responsive",
         mediaQueries: [{
             width: 1500,
-            cols: 4
+            cols: 2
         }, {
             width: 1100,
-            cols: 4
+            cols: 2
         }, {
             width: 800,
-            cols: 3
+            cols: 2
         }, {
             width: 480,
-            cols: 2
+            cols: 1
         }, {
             width: 320,
             cols: 1
@@ -242,6 +242,7 @@ $(document).ready(function () {
         cursorborderradius: '0',
         zindex: '2999'
     });
+    
 
 
 });

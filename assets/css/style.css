@@ -1738,3 +1738,7 @@ footer .social-icon a {
 .shoppingPageEvents .event-description p {
     color: #fff !important;
 }
+.fancybox-button,
+.fancybox-infobar {
+    display: none !important;
+}
