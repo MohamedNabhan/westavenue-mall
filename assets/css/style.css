@@ -830,7 +830,7 @@ li a.whatsapp:focus {
 /*================ 4)Slider ================*/
 
 #nabcarousel .carousel-inner .carousel-item img {
-    height: calc(100vh - 153.78px);
+    height: calc(100vh);
     width: 100%;
 }
 
@@ -1741,4 +1741,9 @@ footer .social-icon a {
 .fancybox-button,
 .fancybox-infobar {
     display: none !important;
+}
+
+.inner-slider,
+.inner-slider .owl-item img {
+    max-height: 400px !important;
 }
