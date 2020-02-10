@@ -1564,6 +1564,12 @@ footer .social-icon a {
 }
 .inneritemsbox .col-md-3:first-child {
     padding: 0;
+        
+}
+
+.inneritemsbox .col-md-3:nth-child(2) {
+    font-weight: bold;
+
 }
 .inneritemsbox .col-md-3 {
     padding: 40px;
